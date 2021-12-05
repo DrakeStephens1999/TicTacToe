@@ -1,0 +1,23 @@
+.square {
+    height: 128px;
+    width: 128px;
+    border: solid 1px black;
+    background-color: aquamarine;
+}
+.col {
+    height: 128px;
+    width: 128px;
+}
+img {
+    display:block;
+    margin:auto;
+}
+p {
+    font-size: 25px;
+}
+.mario {
+    color: red;
+} 
+.bowser {
+    color: seagreen;
+}
