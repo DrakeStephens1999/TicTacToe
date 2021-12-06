@@ -21,3 +21,7 @@ p {
 .bowser {
     color: seagreen;
 }
+
+.hide {
+    display: none;
+}

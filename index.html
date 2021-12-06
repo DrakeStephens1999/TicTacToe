@@ -11,41 +11,32 @@
 <body onload="startGame();">
     
     <div class="container">
-        <p id="game-message">Who's Turn:<span id="turn-message"></span></p>
         <div class="row">
-            <div class="col square" onclick="playGame(this, 1);">
-                
-            </div>
-            <div class="col square" onclick="playGame(this, 2);">
-                
-            </div>
-            <div class="col square" onclick="playGame(this, 4);">
-                
-            </div>
+            <p id="game-message" class="col-sm-3">Who's Turn:<span id="turn-message"></span></p>
+            <p id="p1score" class="col-sm-3"></p>
+            <p id="p2score" class="col-sm-3"></p>
+            <p id="ties" class="col-sm-3"></p>
         </div>
-        <div class="row">
-            <div class="col square" onclick="playGame(this, 8);">
-                
-            </div>
-            <div class="col square" onclick="playGame(this, 16);"> 
-                
-            </div>
-            <div class="col square" onclick="playGame(this, 32);">
-               
-            </div>
+        <div id="gameboard">
+        <div class="row" id="row-1">
+
         </div>
-        <div class="row">
-            <div class="col square" onclick="playGame(this, 64);">
-                
-            </div>
-            <div class="col square" onclick="playGame(this, 128);">
-                
-            </div>
-            <div class="col square" onclick="playGame(this, 256);">
-                
-            </div>
+        <div class="row" id="row-2">
+
         </div>
+        <div class="row" id="row-3">
+
+        </div>
+        </div>
+        <br>
+        <button class="btn btn-info" onclick="resetBoard();">Reset Board</button>
     </div>
+    <audio controls id="mario-win" class="hide">
+        <source src="js/sm64_mario_lets_go.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls id="bowser-win" class="hide">
+        <source src="js/sm64_bowser_laugh.mp3" type="audio/mpeg">
+    </audio>
     <script src="js/script.js"></script>
 </body>
 </html>
